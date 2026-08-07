@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Invitation</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<section class="cover">
+
+<img src="assets/images/cover.png"
+class="page">
+
+<div class="cover-content">
+
+<p class="kepada">
+Kepada Yth.
+</p>
+
+<h2 id="guestName">
+Bapak / Ibu / Saudara/i
+</h2>
+
+<button id="openBtn">
+Buka Undangan
+</button>
+
+</div>
+
+</section>
+
+
+<img src="assets/images/welcome.png" class="page">
+
+<div class="detail-page">
+    <img src="assets/images/detail.png" class="detail-img">
+
+<div class="countdown-box">
+
+    <div class="countdown">
+
+        <div class="time">
+            <span id="days">00</span>
+        </div>
+
+        <div class="time">
+            <span id="hours">00</span>
+        </div>
+
+        <div class="time">
+            <span id="minutes">00</span>
+        </div>
+
+        <div class="time">
+            <span id="seconds">00</span>
+        </div>
+
+    </div>
+    </div>
+<a href="https://maps.app.goo.gl/dAXkPMjDsioeuQFz5"
+   target="_blank"
+   class="maps-link">
+   Open Maps
+</a>
+</div>
+
+<div class="gallery-page">
+
+    <img src="assets/images/gallery.png" class="page">
+
+    <div class="gallery-title">
+        <h2>GALLERY</h2>
+        <p>Momen Indah Bersama</p>
+    </div>
+
+    <div class="gallery-box">
+
+        <div class="frame">
+            <img src="assets/images/gallery1.png" onclick="openImage(this.src)">
+        </div>
+
+        <div class="frame">
+            <img src="assets/images/gallery2.jpg" onclick="openImage(this.src)">
+        </div>
+
+        <div class="frame">
+            <img src="assets/images/gallery3.jpg" onclick="openImage(this.src)">
+        </div>
+
+        <div class="frame">
+            <img src="assets/images/gallery4.jpg" onclick="openImage(this.src)">
+        </div>
+
+        <div class="frame">
+            <img src="assets/images/gallery5.webp" onclick="openImage(this.src)">
+        </div>
+
+        <div class="frame">
+            <img src="assets/images/gallery6.webp" onclick="openImage(this.src)">
+
+    </div>
+
+</div>
+<section id="rsvp" class="page-section">
+
+    <img src="assets/images/rsvp.png" class="page">
+
+
+<div class="rsvp-content">
+
+    <h2 class="section-title">
+        Konfirmasi Kehadiran
+    </h2>
+
+    <p class="section-subtitle">
+        Mohon konfirmasi kehadiran Anda.
+    </p>
+
+    <div class="rsvp-card">
+
+        <div class="attendance">
+            <button class="hadir active">✓ Hadir</button>
+            <button class="tidak">✕ Tidak Hadir</button>
+        </div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Nama Lengkap">
+        </div>
+
+        <div class="input-box">
+            <i class="fa-solid fa-users"></i>
+
+            <select>
+                <option>1 Orang</option>
+                <option>2 Orang</option>
+                <option>3 Orang</option>
+                <option>4 Orang</option>
+            </select>
+        </div>
+
+        <div class="input-box textarea-box">
+            <i class="fa-solid fa-comment"></i>
+
+            <textarea placeholder="Ucapan atau doa..."></textarea>
+        </div>
+
+        <button class="confirm-btn">
+            Konfirmasi Kehadiran
+        </button>
+
+    </div>
+<div class="gift-section" style="margin-bottom:0;">
+    <h2 class="section-title">Tanda Kasih</h2>
+
+    <p class="gift-text">
+        Kehadiran dan doa restu Bapak/Ibu/Saudara/i sudah menjadi hadiah terindah bagi kami.
+        Namun apabila ingin memberikan tanda kasih, dapat melalui rekening berikut.
+    </p>
+
+    <div class="gift-card">
+
+    <img src="assets/images/bca.png" class="bank-logo">
+
+    <p id="rekening">3403890355</p>
+
+    <small>a.n. Suryani</small>
+
+    <button class="copy-btn" onclick="copyRekening()">
+        📋 Salin Nomor Rekening
+    </button>
+
+</div>
+</div>
+</div>
+
+
+<img src="assets/images/closing.png" class="closing-page">
+
+<audio id="bgMusic" loop>
+    <source src="assets/musik/Musik.mp3" type="audio/mpeg">
+    </audio>
+<script src="script.js"></script>
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close" onclick="closeImage()">&times;</span>
+
+    <button class="nav prev" onclick="prevImage(event)">❮</button>
+
+    <img id="lightbox-img">
+
+    <button class="nav next" onclick="nextImage(event)">❯</button>
+
+</div>
+
+</body>
+</html>
